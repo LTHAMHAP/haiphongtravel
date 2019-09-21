@@ -1,0 +1,111 @@
+<!--
+    Semester 1: Digital Passport
+    Subject: Building your 1st website
+    Student Name: DƯƠNG GIA LONG
+    Student ID: FX02556
+    Assignment: 4
+-->
+<!--
+    Sơ đồ trang web và các phần được sử dụng trong bài
+    haiphongtravel/
+        ├── css/
+        │   ├── index.css
+        │   ├── bootstrap.min.css
+        │   ├── bootstrap-theme.css
+        │   └── bootstrap-theme.min.css
+        ├── js/
+        │   ├── bootstrap.js
+        │   └── bootstrap.min.js
+        ├──  background/
+        │   ├── 1.jpg
+        │   ├── doson.jpeg
+        │   └── catba.jpeg
+        |   └── nuivoi.jpeg
+        ├── planyourtrip/
+        │   ├── 1.jpg
+        │   ├── 2.jpg
+        │   └── 3.jpg
+        |   └── 4.jpg     
+        ├── index.html 
+        ├── about.html 
+        ├── planyourtrip.html 
+        ├── transportation.html 
+        ├── traveltips.html         
+         
+-->
+
+
+<!DOCTYPE! html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+        <!-- Sử dụng phương pháp Meta tag để SEO-->     
+        <meta name="haiphongtravel" content="Đồ Sơn, Do Son, Núi Voi, Nui Voi, Cát Bà, Cat Ba"> 
+        <title>haiphongtravel</title>
+        <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,500,100' rel='stylesheet' type='text/css'>
+        <link href="./index.css" rel="stylesheet" type="text/css">
+        <link href="./css/bootstrap-social.css" rel="stylesheet" text="text/css">
+        <link href="./css/bootstrap-social.less" rel="stylesheet" text="text/css">  
+        <link href="./css/bootstrap.css" rel="stylesheet" text="text/css">       
+    </head>
+    <body>
+        <!-- Menu điều hướng trong Index -->
+        <div class="container-fluid">
+            <nav class="navbar navbar-expand-sm bg-light justify-content-center" id="Menubar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="./about.html" target="self">About Hải Phòng</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./index.html" id="FD" target="self">Famous Destination</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./planyourtrip.html" target="self">Plan your trip</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./transportation.html" target="self">Transportation</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./traveltips.html" target="self">Travel Tips</a>
+                    </li>                    
+                </ul>òng
+            </nav>
+        </div>
+        <!-- Kết thúc menu điều hướng trong Index-->
+        
+        <!-- Khung nội dung chính-->
+        <div class="container" id="albumPicture">
+            
+            <div class="card">
+                <!-- Ảnh nền to-->
+                <div class="card-body col-12" id="cb"> 
+                    <img src="./background/1.jpg" class="img-fluid" alt="Responsive image">
+                </div>
+                
+                <!-- Album ảnh nền nhỏ-->
+                <div class="container-fluid">
+                    <div class="row" id="rPicture">    
+                            <!-- Ảnh về Đảo Cát Bà-->  
+                            <img src="./background/catba.jpeg" class="rounded col-4 col-sm-6" alt="Responsive image" style="width: 360px">
+                            <!-- Ảnh về Núi Voi--> 
+                            <img src="./background/nuivoi.jpeg" class="rounded col-4 col-sm-6" alt="Responsive image" style="width: 360px">
+                            <!-- Ảnh về Bãi Biển Đồ Sơn--> 
+                            <img src="./background/doson.jpeg" class="rounded col-4 col-sm-6" alt="Responsive image" style="width: 360px">
+                    </div>
+                </div>                
+            </div>
+        </div>
+        <!-- Kết thúc khung nội dung chính-->
+
+        <!-- Cuối trang-->
+        <footer id="sticky-footer" class="py-4 text-dark-50">
+                <div class="container text-center">
+                <span class="badge badge-info">
+                  Copyright &copy; Dương Gia Long
+                </span>               
+                </div>
+        </footer>        
+        <!-- Kết thúc cuối trang-->
+    </body>
+</html>

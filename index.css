@@ -1,0 +1,42 @@
+html {
+    font-size: 16px;
+}
+a {
+    link {color: #000000}
+    visited {color: #006600}
+    hover {color: #FFCC00}
+    active {color: #FF00CC}
+}
+
+a > #FD {
+    href: "./index.html";
+}
+/* Ưu tiên cho điện thoại*/
+@media only screen and (min-width: 576px){  
+
+    #albumPicture {
+        display: block;
+    }
+}
+
+/* Ưu tiên cho table net*/
+@media only screen and (min-width: 768px) and (max-width: 992px){
+    #albumPicture {
+        display: inline-block;
+    }
+}
+
+/* Ưu tiên cho Desktop*/
+@media only screen and (min-width: 992px) {    
+    
+    
+    /*Ảnh lớn giữa màn hình*/
+    img.img-fluid {
+        padding-left: 200px;        
+    }
+
+    /*Phần Album ảnh nhỏ*/  
+    img.rounded.col-4 {       
+        padding-bottom: 1rem;
+    }
+}
